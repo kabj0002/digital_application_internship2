@@ -1,0 +1,58 @@
+:root {
+  --primary: #f2a03d;
+  --secondary: #000000;
+  --tertiary: #ffffff;
+  --quaternary: #035959;
+  --quinary: #d0d98b;
+  --senary: #032f2f;
+}
+body {
+  background-color: var(--body-bg-col);
+  color: var(--main-text-col);
+}
+.progress-container {
+  background-color: var(--progress-div);
+}
+.progress-bar {
+  background-color: var(--progress-col);
+}
+header {
+  color: var(--header-text-col);
+}
+.header-text,
+.header-text2 {
+  color: var(--header-text-col2);
+  border-color: var(--header-border-col2);
+}
+main {
+  background-color: var(--main-bg-col);
+  border-bottom: var(--main-border-col);
+}
+h2,
+h3,
+h4 {
+  color: var(--h3h4-col);
+}
+footer {
+  background-color: var(--footer-bg-col);
+}
+
+body[data-theme="light"] {
+  --progress-div: var(--tertiary);
+  --progress-col: var(--quaternary);
+  --header-text-col2: var(--primary);
+  --header-border-col2: var(--primary);
+  --body-bg-col: var(--tertiary);
+  --h3h4-col: var(--quaternary);
+  --main-text-col: var(--secondary);
+}
+
+body[data-theme="dark"] {
+  --progress-div: var(--senary);
+  --progress-col: var(--quinary);
+  --header-text-col2: var(--quinary);
+  --header-border-col2: var(--quinary);
+  --body-bg-col: var(--senary);
+  --main-text-col: var(--tertiary);
+  --h3h4-col: var(--quinary);
+}
