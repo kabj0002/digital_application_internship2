@@ -77,13 +77,12 @@ h3 {
 h4 {
   color: var(--quaternary);
   font-family: var(--fontfamilysubheader);
-  font-weight: var(--fontweightlink);
+  font-weight: var(--fontweightsubheader);
   margin-bottom: 0.3rem;
-  text-decoration: underline;
 }
 p {
   max-width: 65ch;
-  font-family: var(--fontfamilytext);
+  font-family: var(--fontfamilysubheader);
   font-weight: var(--fontweighttext);
 }
 a {
@@ -315,11 +314,15 @@ footer img {
   }
   .prev_projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+    gap: 2rem;
   }
   .left {
     grid-column: 1/2;
+  }
+  .right {
+    grid-column: 3/4;
   }
   button {
     width: 200px;

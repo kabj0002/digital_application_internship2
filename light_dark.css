@@ -4,7 +4,8 @@
   --tertiary: #ffffff;
   --quaternary: #035959;
   --quinary: #d0d98b;
-  --senary: #032f2f;
+  /* --senary: #032f2f; */
+  --senary: #121212;
 }
 body {
   background-color: var(--body-bg-col);
@@ -50,8 +51,8 @@ body[data-theme="light"] {
 body[data-theme="dark"] {
   --progress-div: var(--senary);
   --progress-col: var(--quinary);
-  --header-text-col2: var(--quinary);
-  --header-border-col2: var(--quinary);
+  --header-text-col2: var(--quaternary);
+  --header-border-col2: var(--quaternary);
   --body-bg-col: var(--senary);
   --main-text-col: var(--tertiary);
   --h3h4-col: var(--quinary);
